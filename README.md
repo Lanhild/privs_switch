@@ -1,7 +1,7 @@
 # Privs Switcher
 Makes you able to grant/revoke privileges on a timed basis.
 ## Use
-The default `grant` and `revoke` commands still work.
+The default `grant` and `revoke` commands still work, but they are overwritten with the syntax as additionnal/optionnal params.
 
 `grant <playername> <time-optional> <privstring>`
 
@@ -20,3 +20,7 @@ The default `grant` and `revoke` commands still work.
 - 1Y - one year (360 days).
 
 Additional time syntax can *probably* be added.
+
+### Additionnal informations
+The `grant` command normally requiring the `grant` privilege will *still require* the `grant` privilege.
+The only command affected is `revoke`, that is usable with the `revoke` and `switcher` privilege.
