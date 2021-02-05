@@ -30,7 +30,7 @@ local db = load_data(db_filename) or {} -- loads file if it exists, or makes emp
 --You can probably add/modify syntax acording to your preferences
 local unit_to_secs = {
     s = 1, m = 60, h = 3600,
-    D = 86400, W = 604800, M = 2592000, Y = 31104000,
+    D = 86400, W = 604800, M = 2592000, Y = 31536000,
 }
 
 local function parse_time(t) --> secs
