@@ -187,7 +187,7 @@ minetest.override_chatcommand("revoke", {
         return handle_privs_command(name, revokename, revokeprivstr, "revoke", timestr)
     end,
 })
-
+--logging the command execution
 local function update_privs()
     local now = os.time()
     for n in pairs(db) do
